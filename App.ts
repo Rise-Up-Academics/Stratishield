@@ -182,12 +182,15 @@ const getUserProfile = async (accessToken: string): Promise<UserProfile> => {
                 throw new Error('Invalid OAuth state. Start login again.');
             }
             const token = await exchangeCodeForToken(code);
+            const user = await getUserProfile(token.access_token);
             sessionStorage.setItem('oauth_access_token', token.access_token);
+            sessionStorage.setItem('oauth_user_profile', JSON.stringify(user));
             sessionStorage.removeItem('oauth_state');
             sessionStorage.removeItem('oauth_code_verifier');
             // Authentication is complete, so the auth page should not remain
             // visible after the token has been stored.
             window.location.assign('/index.html');
+            return;
         }
         const accessToken = sessionStorage.getItem('oauth_access_token');
         if (accessToken) {
