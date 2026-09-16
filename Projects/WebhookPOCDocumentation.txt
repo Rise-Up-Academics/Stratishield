@@ -1,0 +1,8 @@
+Webhook and Bull Queue POC
+
+Purpose:
+This project demonstrates receiving a webhook event, adding a job to a BullMQ queue, and processing the job asynchronously with a background worker. All parts do not fully function, project is meant to simply show how the process would work. 
+
+Files:
+- WebhookPOC.ts - webhook, queue, and worker example
+- sample-email.txt - sample file processed by the worker

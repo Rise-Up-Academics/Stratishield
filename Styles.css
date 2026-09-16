@@ -1,0 +1,54 @@
+header h1 {
+  color: white;
+  margin: 0;
+  padding: 14px 16px;
+  background: #333333;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #333333;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav button {
+  list-style: none;
+  border: 2px dotted;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #bbbbbb;
+  background: #333333;
+}
+
+nav button:last-child {
+  border-right: none;
+  margin-left: auto;
+}
+
+nav a.nav-button {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  background: #333333;
+}
+
+nav a.nav-button:hover {
+  background: #111111;
+}
+
+nav a.nav-button.active {
+  background: #04AA6D;
+}

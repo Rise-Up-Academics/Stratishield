@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>InboxOS</title>
+        <meta name="description" content="InboxOS authentication">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+
+        <section id="registerPage">
+            <h1 id="registerHeader">Create your InboxOS account</h1>
+            <button id="registerButton" type="button">Create account</button>
+            <button id="showLoginButton" type="button">Already have an account? Log in</button>
+        </section>
+
+        <section id="loginPage">
+            <h1 id="loginHeader">Welcome back</h1>
+            <button id="loginButton" type="button">Log in</button>
+            <button id="showRegisterButton" type="button">Need an account? Create one</button>
+        </section>
+
+        <section id="profilePage" hidden>
+            <h1>InboxOS account</h1>
+            <p>Logged in as <strong id="userEmail"></strong></p>
+            <pre id="userProfile"></pre>
+            <button id="logoutButton" type="button">Log out</button>
+        </section>
+
+        <section id="errorPage" hidden>
+            <p id="authError" role="alert"></p>
+        </section>
+
+        <script src="App.js"></script>
+    </body>
+</html>
