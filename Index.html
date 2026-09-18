@@ -15,38 +15,28 @@
     <link rel="icon" href="" type="">
 </head>
 <body>
+    <section id="protectedSite" hidden>
+        <header>
+            <h1>InboxOS</h1>
+            <nav>
+                <a href="home.asp">Home</a>
+                <a href="chat.asp">Chat</a>
+                <a href="settings.asp">Settings</a>
+            </nav>
+        </header>
 
-    <!-- Header Section -->
-    <header>
-        <h1>InboxOS</h1>
-        <nav>
-            <ul>
-                <button><a href="home.asp" class="nav-button">Home</a></button>
-                <button><a href="chat.asp" class="nav-button">Chat</a></button>
-                <button style="float:right;"><a href="settings.asp" class="nav-button">Settings</a></button>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content Area -->
-    <main id="appContent" hidden>
-        <section id="content">
+        <main id="appContent">
             <h2>Welcome to InboxOS</h2>
             <p>Signed in as <strong id="userEmail"></strong></p>
             <button id="logoutButton" type="button">Log out</button>
-        </section>
-    </main>
+        </main>
+    </section>
 
-    <p id="authRequired" hidden>
-        <a href="auth.html">Sign in with Google</a> to continue.
-    </p>
+    <section id="authFallback">
+        <h1>Authentication required</h1>
+        <a href="auth.html">Login or register</a>
+    </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; Copyright</p>
-    </footer>
-
-    <!-- External JavaScript File -->
     <script src="index.js"></script>
 </body>
 </html>

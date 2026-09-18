@@ -4,6 +4,7 @@
     "module": "CommonJS",
     "moduleResolution": "Node",
     "verbatimModuleSyntax": false,
+    "ignoreDeprecations": "6.0",
     "outDir": "./dist-server"
   },
   "include": ["server.ts"]

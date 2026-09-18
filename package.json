@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc App.ts --target ES2020 --module none --outFile App.js --skipLibCheck --ignoreConfig --ignoreDeprecations 6.0",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "ts-node --project tsconfig.server.json server.ts"
+    "server": "ts-node --project tsconfig.server.json server.ts",
+    "index": "tsc index.ts --target ES2020 --module none --outFile index.js --skipLibCheck --ignoreConfig --ignoreDeprecations 6.0"
   },
   "keywords": [],
   "author": "",
