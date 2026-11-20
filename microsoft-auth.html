@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Microsoft sign-in | InboxOS</title>
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="/styles/Favicon.ico" sizes="32x32">
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="brand-logo" href="index.html" aria-label="Stratishield AI home">
+                <img src="styles/stratishield-logo-on-dark.svg" alt="Stratishield AI">
+            </a>
+        </header>
+        <main>
+        <h1>Connect Microsoft</h1>
+        <p>Sign in to authorize InboxOS to access Microsoft Graph.</p>
+        <button id="signInButton" type="button">Sign in with Microsoft</button>
+        <p id="status" role="status"></p>
+        <section id="result" hidden>
+            <h2>Signed in</h2>
+            <pre id="profile"></pre>
+            <label for="token">Access token for local development</label>
+            <textarea id="token" readonly></textarea>
+            </section>
+        </main>
+        <script src="developer-mode.js"></script>
+        <script src="App.js"></script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Read, draft, and send email with InboxOS.">
+    <title>Email | InboxOS</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="/styles/Favicon.ico" sizes="32x32">
+</head>
+<body>
+    <section id="emailProtected" data-auth-protected hidden>
+        <header class="app-header">
+            <button id="menuButton" type="button" aria-expanded="false" aria-controls="menuTab">Menu</button>
+            <a class="brand-logo" href="index.html" aria-label="Stratishield AI home">
+                <img src="styles/stratishield-logo-on-dark.svg" alt="Stratishield AI">
+            </a>
+            <nav id="menuTab" hidden aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Landing Page</a></li>
+                    <li><a href="email.html">Email</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                </ul>
+            </nav>
+            <button id="logoutButton" type="button">Log out</button>
+        </header>
+
+        <main>
+            <h1>Email</h1>
+            <p>Signed in as <span id="userEmail">Microsoft user</span></p>
+
+            <section aria-labelledby="readEmailHeading">
+                <h2 id="readEmailHeading">Read an email</h2>
+                <form id="readEmailForm">
+                    <label for="messageId">Microsoft Graph message ID</label>
+                    <input id="messageId" name="messageId" type="text" required>
+                    <button type="submit">Read email</button>
+                </form>
+                <p id="readStatus" role="status" aria-live="polite"></p>
+                <article id="emailResult" hidden>
+                    <h3 id="emailSubject"></h3>
+                    <p id="emailSender"></p>
+                    <p id="emailReceived"></p>
+                    <pre id="emailBody"></pre>
+                </article>
+            </section>
+
+            <section aria-labelledby="composeEmailHeading">
+                <h2 id="composeEmailHeading">Write or draft an email</h2>
+                <form id="composeEmailForm">
+                    <label for="recipient">To</label>
+                    <input id="recipient" name="recipient" type="email" autocomplete="email" required>
+
+                    <label for="ccRecipient">Cc (optional)</label>
+                    <input id="ccRecipient" name="ccRecipient" type="email">
+
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" required>
+
+                    <label for="body">Message</label>
+                    <textarea id="body" name="body" rows="8" required></textarea>
+
+                    <button id="draftButton" type="button">Save draft</button>
+                    <button type="submit">Send email</button>
+                </form>
+                <p id="composeStatus" role="status" aria-live="polite"></p>
+            </section>
+        </main>
+    </section>
+
+    <section id="emailAuthRequired" data-auth-required hidden>
+        <a class="brand-logo" href="index.html" aria-label="Stratishield AI home">
+            <img src="styles/stratishield-logo-on-light.svg" alt="Stratishield AI">
+        </a>
+        <h1>Authentication required</h1>
+        <p>Sign in with an authorized Microsoft account to access email.</p>
+        <p id="emailAuthStatus" role="status" aria-live="polite"></p>
+        <a href="http://localhost:5500/microsoft-auth.html?returnTo=%2Femail.html">Sign in with Microsoft</a>
+    </section>
+
+    <script src="developer-mode.js" defer></script>
+    <script src="App.js" defer></script>
+    <script src="email.js" defer></script>
+</body>
+</html>

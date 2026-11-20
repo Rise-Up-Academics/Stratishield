@@ -5,33 +5,24 @@
         <title>InboxOS</title>
         <meta name="description" content="InboxOS authentication">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="/styles/Favicon.ico" sizes="32x32">
     </head>
     <body>
+        <header class="site-header">
+            <a class="brand-logo" href="index.html" aria-label="Stratishield AI home">
+                <img src="styles/stratishield-logo-on-dark.svg" alt="Stratishield AI">
+            </a>
+        </header>
 
-        <section id="registerPage">
-            <h1 id="registerHeader">Create your InboxOS account</h1>
-            <button id="registerButton" type="button">Create account</button>
-            <button id="showLoginButton" type="button">Already have an account? Log in</button>
-        </section>
+        <main class="auth-main">
+            <h1>Sign in to InboxOS</h1>
+            <p>Use an account authorized by your Microsoft organization.</p>
+            <button id="microsoftSignInButton" type="button" hidden>Continue with Microsoft</button>
+            <button id="developerModeButton" type="button" hidden>Continue without Microsoft sign-in (developer mode)</button>
+        </main>
 
-        <section id="loginPage" hidden>
-            <h1 id="loginHeader">Welcome back</h1>
-            <button id="loginButton" type="button">Log in</button>
-            <button id="showRegisterButton" type="button">Need an account? Create one</button>
-        </section>
-
-        <section id="profilePage" hidden>
-            <h1>InboxOS account</h1>
-            <p>Logged in as <strong id="userEmail"></strong></p>
-            <pre id="userProfile"></pre>
-            <button id="logoutButton" type="button">Log out</button>
-        </section>
-
-        <section id="errorPage" hidden>
-            <p id="authError" role="alert"></p>
-        </section>
-
+        <script src="developer-mode.js"></script>
         <script src="App.js"></script>
     </body>
 </html>

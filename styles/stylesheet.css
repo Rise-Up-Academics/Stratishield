@@ -1,0 +1,479 @@
+:root {
+    color-scheme: light;
+    --brand-navy: #031923;
+    --brand-indigo: var(--brand-navy);
+    --brand-gold: #eaa948;
+    --brand-gray: #e3e3e3;
+    --brand-gray-light: #f2f2f2;
+    --brand-gray-muted: #b3b3b3;
+    --brand-white: #f9f9f9;
+    --text-color: var(--brand-navy);
+    --muted-color: rgb(3 25 35 / 68%);
+    --card-color: var(--brand-white);
+    --border-color: var(--brand-gray-muted);
+    --heading-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --body-font: Dosis, "Trebuchet MS", sans-serif;
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-ExtraLight.ttf) format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-ExtraBold.ttf) format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: var(--brand-white);
+    color: var(--text-color);
+    font: 16px/1.6 var(--body-font);
+}
+
+header {
+    position: relative;
+    display: flex;
+    min-height: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--brand-navy);
+    color: var(--brand-white);
+}
+
+.brand-logo {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    line-height: 0;
+}
+
+.brand-logo img {
+    display: block;
+    width: auto;
+    height: 2.4rem;
+}
+
+.app-header .brand-logo {
+    margin-left: 4rem;
+}
+
+main {
+    width: min(100% - 2rem, 72rem);
+    margin: 3rem auto;
+}
+
+main.auth-main {
+    max-width: 42rem;
+}
+
+#authRequired,
+#emailAuthRequired {
+    width: min(100% - 2rem, 42rem);
+    margin: clamp(3rem, 12vh, 8rem) auto;
+    padding: clamp(1.25rem, 4vw, 2rem);
+    border: 1px solid var(--border-color);
+    border-top: 0.3rem solid var(--brand-gold);
+    border-radius: 0.6rem;
+    background: var(--card-color);
+    box-shadow: 0 0.25rem 1rem rgb(3 25 35 / 7%);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--brand-navy);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+h2 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+a {
+    color: var(--brand-indigo);
+    text-decoration-color: var(--brand-gold);
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    color: rgb(3 25 35 / 75%);
+}
+
+button {
+    min-height: 2.75rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--brand-gold);
+    border-radius: 0.35rem;
+    background: var(--brand-gold);
+    color: var(--brand-indigo);
+    font: 600 1rem var(--body-font);
+    cursor: pointer;
+    transition: filter 150ms ease, transform 150ms ease;
+}
+
+button:hover {
+    filter: brightness(0.94);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--brand-gold);
+    outline-offset: 3px;
+}
+
+input,
+textarea {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--brand-gray-muted);
+    border-radius: 0.3rem;
+    background: var(--card-color);
+    color: var(--text-color);
+    font: inherit;
+}
+
+textarea {
+    min-height: 11rem;
+    resize: vertical;
+}
+
+label {
+    font-weight: 600;
+}
+
+main > section {
+    margin: 1.5rem 0;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid var(--border-color);
+    border-radius: 0.6rem;
+    background: var(--card-color);
+    box-shadow: 0 0.25rem 1rem rgb(3 25 35 / 7%);
+}
+
+form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+form button {
+    justify-self: start;
+    margin-top: 0.25rem;
+}
+
+#emailBody {
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+#readStatus,
+#composeStatus,
+#status,
+#emailAuthStatus {
+    min-height: 1.5em;
+    color: var(--muted-color);
+    white-space: pre-wrap;
+}
+
+#profileBtn {
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid var(--brand-gold);
+    border-radius: 50%;
+    background: var(--brand-white);
+    color: var(--brand-indigo);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 0.7rem;
+    right: 1.25rem;
+    z-index: 1002;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    z-index: 1003;
+    min-width: 10rem;
+    padding: 0.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.4rem;
+    background: var(--card-color);
+    box-shadow: 0 0.4rem 1.2rem rgb(3 25 35 / 18%);
+}
+
+.profile-dropdown a,
+.profile-dropdown button {
+    display: block;
+    width: 100%;
+    min-height: 2.5rem;
+    padding: 0.45rem 0.65rem;
+    border: 0;
+    border-radius: 0.2rem;
+    background: transparent;
+    color: var(--text-color);
+    font: 1rem var(--body-font);
+    text-align: left;
+    text-decoration: none;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover {
+    background: var(--brand-gray-light);
+}
+
+#menuButton {
+    position: fixed;
+    top: 0.7rem;
+    left: 1.25rem;
+    z-index: 1001;
+    border-color: var(--brand-gold);
+    background: var(--brand-navy);
+    color: var(--brand-white);
+}
+
+#menuTab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: min(20rem, 85vw);
+    height: 100vh;
+    padding: 5rem 1.5rem 1.5rem;
+    background: var(--brand-indigo);
+    box-shadow: 0.25rem 0 1rem rgb(3 25 35 / 20%);
+}
+
+#menuTab ul {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menuTab a {
+    display: block;
+    padding: 0.65rem 0.75rem;
+    border-radius: 0.3rem;
+    color: var(--brand-white);
+    text-decoration: none;
+}
+
+#menuTab a:hover {
+    background: rgb(249 249 249 / 12%);
+    color: var(--brand-gold);
+}
+
+.chat-panel {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.chat-panel > h1,
+.chat-panel > p {
+    margin: 0;
+}
+
+.chat-container {
+    min-height: 18rem;
+}
+
+.chat-box {
+    display: flex;
+    min-height: 18rem;
+    max-height: 55vh;
+    flex-direction: column;
+    gap: 0.75rem;
+    overflow-y: auto;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.4rem;
+    background: var(--brand-gray-light);
+}
+
+.message {
+    width: fit-content;
+    max-width: min(85%, 48rem);
+    padding: 0.65rem 0.85rem;
+    border-radius: 0.6rem;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.assistant-message {
+    align-self: flex-start;
+    background: var(--brand-white);
+}
+
+.action-approval-card {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.action-approval-card pre {
+    margin: 0;
+    font: inherit;
+    white-space: pre-wrap;
+}
+
+.action-approval-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.user-message {
+    align-self: flex-end;
+    background: var(--brand-gray);
+}
+
+.user-input {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+}
+
+.user-input button {
+    justify-self: stretch;
+    margin: 0;
+}
+
+.user-input button:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+.chat-status {
+    min-height: 1.5em;
+    color: var(--muted-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+@media (max-width: 40rem) {
+    header {
+        padding-inline: 1rem;
+    }
+
+    main {
+        margin-block: 2rem;
+    }
+
+    main > section {
+        padding: 1.25rem;
+    }
+
+    .message {
+        max-width: 95%;
+    }
+
+    .user-input {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

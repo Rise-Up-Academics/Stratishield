@@ -1,0 +1,226 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('dana.whitfield@meridianfreight.example')/messages('{id}')/attachments",
+  "value": [
+    {
+      "messageId": "AAMkAGHe9jrE8Gkb_u_uAVQZ71t-i7mIQx3HElkFu3RBlJak5VVASnBLBxBuVmOcQb1KikWLbILBD5Wwtestia2DrTwHklyzGdgQKZwbAi8ecqxfHiVJVOfEPNuNKA",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGfFkhab8lj-NItB-lNZOaYnlEsrV_PIeIGjZBKwJNmcRwPj_d__o5WA4KxenV",
+          "name": "KPI_Summary.pdf",
+          "contentType": "application/pdf",
+          "size": 124000,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGDHLeQJznwQUnlQBoTB8LSJE-xlf2pMIOfs7lc966ff-zrHZLZenSgjL9h6H0VTwQAYcDeOETe_hsBLNMl1gkjoSkHAWBZSSmoYxHfGJETioK4IpV-9zp02CR",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGr4l9Fa9KkI1xBafQh0-cIScdPWAsxaWBgF_LVXbKOHH9iLQ1ty0aQT6FjVaV",
+          "name": "Columbus_Peak_Staffing_Draft.xlsx",
+          "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": 29800,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGzr-QGFpV1pJ5_x0q6hDxp6T43kQGexl8FO0Wd5nCxDn6aftN8HEXxhCQmPC7L0sZe6gvOylnoycGCUwJouGZMvAUXQgQkicHUe4BkkP0bGPEVvSVea8nVpum",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGVXqBJUkQgDuhE9_9xXTvYmgrRvlUXDRb5vv3MhDNgwr8lBH-lX4WQDQij8WK",
+          "name": "KPI_Summary.pdf",
+          "contentType": "application/pdf",
+          "size": 123000,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGAWRIp1xOTtBbx7-6Q4IHeY_tVG455wmgTR5aPsf-wTwlEqkmpvhgtmwHYZV2gYfn5lR9J_gSX4ICZahGgpOsL8rzj6wvqZKXcVFEi66YIqeVJq6KYekbACua",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGIqpvtIM6qcMrDzoZH_31J_8tuOFNy9cu32XPnp2HixfjpvKreYFPR6Ier1sA",
+          "name": "Safety_Audit_Summary_Oct.pdf",
+          "contentType": "application/pdf",
+          "size": 255000,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGyAG4DDeCsV7vx5RI383KK2YQ5yQvpcmroKjMQoHy9z686_xjICtMN45C3V0-pcZSDrEE27kUa6fEZFr9WG6wI1DY56pmxoM4U5BQvKuKpX4tDYedu0Yl4meJ",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGovwvgDxSA1CHjnhoLpGLOZvd0nuVfsCm76wsILuh2r66Ucnn7ZIyxq4K5bqj",
+          "name": "Brightline_Renewal_Redlines.docx",
+          "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": 64900,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGD70ZB3Shu2vFk_juvbD6cu66hcCMatfva6Oi3PlS3JkkBcC0jPuXaSe8f6jeeNPnw1hoT72bWa-mwWxwchSP-41idh5T-bbTcw5Lm_buLnMPa7XHJOmhTU3F",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAG4434_uC0Nu-OmnFi87BcKfgrS7PdDKit6WnlNMKCu8Wf6_qlDk0IKm7a-T2K",
+          "name": "Brightline_Renewal_Redlines.docx",
+          "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": 64900,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGvaFUIXY5XNv7nJRqoZSuAMdRe6gQLqvWZmhLvZpZCgQhx3Pt51uLlaUKbAo2u5zTMxaF_iXnRNa812b_2nJVx-y8ioRkX27YyaLcEuAvzUvjz93v4i0n1q-0",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGa-Nlpncu2WPuhTgRc-prgb_kSmb4pOMtWgBG9GRz1CoG-4DYFiqkhi75vwR6",
+          "name": "Brightline_Renewal_OrderForm.pdf",
+          "contentType": "application/pdf",
+          "size": 201000,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGK-IEoBWPFViFIIQvNOH6xlmFSa6SiH5JsYJT2K3RNjz8lmAC21G27_fIyIJYZK2nHPUJ2b_Hn6A7_oX2n1o51PWX5bNIICRBNk-1cHdDdP8cUbT_mIHQ5KAe",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGiftA_a6bz6me4XR2_FCcemTUBFXZdCuVCyGZJXo5gTXuatToJGN7ZtqbT6CY",
+          "name": "Finalist_Resumes.pdf",
+          "contentType": "application/pdf",
+          "size": 512000,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGjmKwX5XbLRdrwka4i7d39o-AMq0yIKpemh04uOF3iW3ddD1EZrYYwfmE8Zme5wjR87sVhc0OiES6fVMSmsfEE_KLUuCGFWyGWS7EmcfWPl1j87YHhzPKktQB",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAG2S6iUyHgl1fJu3iUXYoQZjyW-BHWNX1HpR_NUhX9hbnOr1UX8sYFPn8HNDKj",
+          "name": "WMS_Cutover_Risk_Register.xlsx",
+          "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": 35100,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGyGFs3VGRW8nXsURpxff1kLO4h0MByIeAQb1rC12JdAygbrJX5vIGovKjpnwcVtUgcNYH8MKPK9iDzOt-3Yc8tMyMTyQ_0v0kpPSVWrrCSlyBRThHZ65_Vlss",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGx8QD3VUlSna1PlWSjLuZfL4tQWjQBuYohDUxt2JOv-bnED7sLvec-Uokp5d5",
+          "name": "Hotel_Folio_Chicago.pdf",
+          "contentType": "application/pdf",
+          "size": 88000,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGuBHaoT6k4MP1Lee3RvqNl6IY_YItx14VVqfU-PMNnSr0hjVpMJ2IPGoAG3P4CRUAspcXjJci0i1YztqWcq2TN1MXxH_-OTFh0lRyy0eTHUI4E9qDA96845ev",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGE6VSHBUrSlq1pH6inSbtAYXZVx1H2QBVqYjLwYSk-cVFyYZoKZtozAwWa-lu",
+          "name": "TriState_Corrective_Action_Plan.docx",
+          "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": 73216,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGpQMoGoy-fEPo3bDIUzUetNwHVcPTu3hVDxWE1E-k2a3lAEzz8wfO7NPRwYHLYeOuGNUEWQIwkLmeUgP8vJIIUGuLPhzjohgw_bLEyAWyerTcxZs_clLNpbY9",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGMrN3j2JxWNo1eWjzfn1qdwaKjyXJ4y3h8PJmi9Cf1gvB7a_3LDcxcKR-UjSQ",
+          "name": "KPI_Summary.pdf",
+          "contentType": "application/pdf",
+          "size": 122000,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGzmRhJ2X6TviVbKaHPzuY_5a4itHERpXqwOSDJhZJJzGEH3gen8DkCtlD82NyBRWkNus8FkEIzWYgbSwUhqxQt2ql878iXwE9-xLuf04-r9PkyKees6HKdHtN",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGc3ew604sAXGXsror9XZLqFsM_52kJzA3znmDFQectkcsLSr_JPvhyDLmDzQu",
+          "name": "Q3_Ops_Variance.xlsx",
+          "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": 48230,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAG88kXryYL_C1BvYiXL27dQgGCgKIiFlmeNSc2NUKyt934vKuOha8NguAFFBHxqAIWE_Vk0C-_7jl5p5PWV7ofpXgBuB8Aq7an5Tmi0SVrbqLPnrdJ3C8Usr4A",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGA45JEkwXCgU6jDq6cdzkeusbgX3mNZW2vxGGEmtTFelrCqQkIBA2lGkswBtj",
+          "name": "KPI_Summary.pdf",
+          "contentType": "application/pdf",
+          "size": 121000,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGBvY8fqWBwN32X-Fu9yF9CPocPhJvjojRHp-IAaAYbI5NRx7gmepXSOUos_t7xFHmexzTwe17l8tWsKUquL24gofRkyj_Hr3RLHwoJfKuE4iO2o_1VmAr1mMA",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGAChNzD3NdNly1z0xDV6fbxDfO4jLC3SOQ35Bu8yh3h8e8D28tmVpgZyzOaHZ",
+          "name": "Hollis_Volume_Proposal_2027.pdf",
+          "contentType": "application/pdf",
+          "size": 184320,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGXBvvnHZ6Kajgz_Vu2eNnWahhObNDnWTmcY3Ibk8vx9D-He6MlekGfC4RNXDHVaN1LsFw4G5bgQlzs9r-W6lMuVq10viZFH-B6XhADKFFKENqGcH520uEZmxA",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAGwK4QkMb3xVFgpPbR_3KpnkVj9M4BAElZ_LEKlEVlgrTuMb6lXFSkcnAQ5_tT",
+          "name": "Hollis_Price_Notice_Jan2027.pdf",
+          "contentType": "application/pdf",
+          "size": 92160,
+          "isInline": false
+        }
+      ]
+    },
+    {
+      "messageId": "AAMkAGuIu_iSafqCcpG0-gwHfuSvXTA8lCjVociLICnbbGapcEcbF0sWsh2gKdsDdvlTOEu9hApK_7VESIxWpMwKCCSBqoZIvCmsaaKya1vZCAUvmLMKJVu21Qtz-x",
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "id": "AAMkAG08444w3VE1Wh-XU5F3Tf9ZxXK95999LeTBllDTIq-0MNQS4IOWGOffaM45YU",
+          "name": "KPI_Summary.pdf",
+          "contentType": "application/pdf",
+          "size": 120000,
+          "isInline": false
+        }
+      ]
+    }
+  ]
+}

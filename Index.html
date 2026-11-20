@@ -9,34 +9,67 @@
     <meta name="description" content="InboxOS is a Calendar & Mail assistant that helps you manage your emails and schedule efficiently.">
     
     <!-- External CSS Stylesheet -->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
     
     <!-- Favicon -->
-    <link rel="icon" href="" type="">
+    <link rel="icon" type="image/x-icon" href="/styles/Favicon.ico" sizes="32x32">
 </head>
 <body>
-    <section id="protectedSite" hidden>
-        <header>
-            <h1>InboxOS</h1>
-            <nav>
-                <a href="home.asp">Home</a>
-                <a href="chat.asp">Chat</a>
-                <a href="settings.asp">Settings</a>
-            </nav>
+    <section id="protectedSite" data-auth-protected hidden>
+        <header class="app-header">
+            <button id="menuButton">Menu</button>
+            <a class="brand-logo" href="index.html" aria-label="Stratishield AI home">
+                <img src="styles/stratishield-logo-on-dark.svg" alt="Stratishield AI">
+            </a>
+            <div id="menuBar" hidden>
+                <ul>
+                    <li><a href="index.html">Landing Page</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="index.html">Chat</a></li>
+                </ul>
+            </div>
+
+            <div id="profileMenu" class="profile-menu">
+                <button id="profileBtn" type="button" aria-expanded="false" aria-controls="profileBar">
+                    Profile
+                </button>
+                <div id="profileBar" class="profile-dropdown" hidden>
+                    <a id="profilePageBtn" href="profile.asp">Profile</a>
+                    <a id="settingsPageBtn" href="settings.asp">Settings</a>
+                    <button id="logoutButton" type="button">Log out</button>
+                </div>
+            </div>
         </header>
 
         <main id="appContent">
-            <h2>Welcome to InboxOS</h2>
-            <p>Signed in as <strong id="userEmail"></strong></p>
-            <button id="logoutButton" type="button">Log out</button>
+            <section class="chat-panel" aria-labelledby="chatHeading">
+                <h1 id="chatHeading">InboxOS Chat</h1>
+                <p>Ask a question about the email and calendar context.</p>
+                <div class="chat-container">
+                    <div class="chat-box" id="chatMessages" role="log" aria-live="polite" aria-relevant="additions">
+                        <div class="message assistant-message">AI: How can I help with your email or calendar?</div>
+                    </div>
+                </div>
+                <form id="chatForm" class="user-input">
+                    <label class="visually-hidden" for="messageInput">Your message</label>
+                    <input type="text" id="messageInput" maxlength="4000" placeholder="Type your message..." autocomplete="off" required>
+                    <button id="sendButton" type="submit">Send</button>
+                </form>
+                <p id="chatStatus" class="chat-status" role="status" aria-live="polite"></p>
+            </section>
         </main>
     </section>
 
-    <section id="authFallback">
+    <section id="authRequired" data-auth-required>
+        <a class="brand-logo" href="index.html" aria-label="Stratishield AI home">
+            <img src="styles/stratishield-logo-on-light.svg" alt="Stratishield AI">
+        </a>
         <h1>Authentication required</h1>
-        <a href="auth.html">Login or register</a>
+        <a href="auth.html">Sign in with Microsoft</a>
     </section>
 
-    <script src="index.js"></script>
+    <script src="developer-mode.js"></script>
+    <script src="App.js"></script>
+    <script src="chat.js"></script>
 </body>
 </html>

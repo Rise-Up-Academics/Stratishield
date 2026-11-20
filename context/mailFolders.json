@@ -1,0 +1,50 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('dana.whitfield@meridianfreight.example')/mailFolders",
+  "value": [
+    {
+      "id": "AAMkAGR45bGVYhO0uy0Y7itX09kEtkjoVyEl-It9iyb2YkMsq4G9QffEpTSZukBaVL",
+      "displayName": "Inbox",
+      "parentFolderId": "AAMkAG8AF_PPje83Eojo7S_ggTltNSfHKdSu9uMsZyx4uQU_OC8zTSBMx9F8f1OYba",
+      "childFolderCount": 0,
+      "unreadItemCount": 8,
+      "totalItemCount": 72,
+      "isHidden": false
+    },
+    {
+      "id": "AAMkAGEVpg7m3W5rgvGHpFHLB_UiORG9XwvY0e4b-PevtfEbVr6QXjDaLnBRChcu87",
+      "displayName": "Sent Items",
+      "parentFolderId": "AAMkAGY1NM7TDt7-AT-G2PRh0weqvdQIv0Qe35bZQ3BNtHicg3U3ZwdjuHG7_HKcSj",
+      "childFolderCount": 0,
+      "unreadItemCount": 0,
+      "totalItemCount": 27,
+      "isHidden": false
+    },
+    {
+      "id": "AAMkAGE7get6ovIFluicVXBU4mh8ihINL6sanrZmVWb5UGIiMup6NnZXxdFlKjxTrK",
+      "displayName": "Drafts",
+      "parentFolderId": "AAMkAGXfjF3E05mYzZQLbZXoJwFCLneODmxJhCOIB_TR1m957QY7YtiluXWTn-LNYA",
+      "childFolderCount": 0,
+      "unreadItemCount": 0,
+      "totalItemCount": 1,
+      "isHidden": false
+    },
+    {
+      "id": "AAMkAGxczUQ3-36ACGI5REe4b3TDbT7xf9Z70plLUmQ36qNLfHqFrRxBrPJZavTcQE",
+      "displayName": "Archive",
+      "parentFolderId": "AAMkAGacAk96qo5XnJhd7rzGH4N_HCOu6y52DenkbByCJyvo8-h3O5UPv2nf-QOp0V",
+      "childFolderCount": 0,
+      "unreadItemCount": 0,
+      "totalItemCount": 3,
+      "isHidden": false
+    },
+    {
+      "id": "AAMkAGhxOjgHXBIOOMlVJ_esokEAKoSMQXHJH0LLKHF3lshRrIvLCbOlaYIwR5_dWY",
+      "displayName": "Deleted Items",
+      "parentFolderId": "AAMkAGVmDZJPx4aNJ8S3AosEJRHjkREAgw9VRT93BeonGlAkhBODgdGvEFhaIemPDo",
+      "childFolderCount": 0,
+      "unreadItemCount": 0,
+      "totalItemCount": 0,
+      "isHidden": false
+    }
+  ]
+}
